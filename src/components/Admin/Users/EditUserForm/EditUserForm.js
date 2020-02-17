@@ -204,8 +204,8 @@ function EditForm(props) {
               value={userData.role}
             >
               <Option value="admin">Administrador</Option>
-              <Option value="editor">Editor</Option>
-              <Option value="reviewr">Revisor</Option>
+              <Option value="editor">Docente</Option>
+              <Option value="reviewr">Estudiante</Option>
             </Select>
           </Form.Item>
         </Col>
