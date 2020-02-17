@@ -119,8 +119,8 @@ function AddForm(props) {
               value={userData.role}
             >
               <Option value="admin">Administrador</Option>
-              <Option value="editor">Editor</Option>
-              <Option value="reviwer">Revisor</Option>
+              <Option value="editor">Docente</Option>
+              <Option value="reviwer">Estudiante</Option>
             </Select>
           </Form.Item>
         </Col>
