@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Luis Fernando Guerra</title>
+        <title>Sistema de gestion de aulas</title>
         <meta
           name="description"
           content="Home | Web sobre programación"

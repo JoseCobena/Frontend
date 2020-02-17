@@ -38,7 +38,7 @@ export default function PostInfo(props) {
   return (
     <>
       <Helmet>
-        <title>{postInfo.title} | Luis Fernando Guerra</title>
+        <title>{postInfo.title} | Sistema de gestion de aulas</title>
       </Helmet>
       <div className="post-info">
         <h1 className="post-info__title">{postInfo.title}</h1>
