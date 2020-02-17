@@ -16,11 +16,11 @@ export default function CamAr() {
           <h3>
            PUCESE
             <br />
-           GRUPO 2
+           GRUPO 1
 
           </h3>
         <Link to="/courses">
-          <Button>Escaneaer codigo</Button>
+          <Button>Escanear codigo</Button>
         </Link>
         </Col>
         <Col lg={4} />
