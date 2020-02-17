@@ -8,7 +8,7 @@ export default function SocialLinks() {
   return (
     <div className="social-links">
       <a
-        href="https://github.com/belkixrequejo/react-master"
+        href="https://github.com/belkixrequejo"
         className="github"
         target="_blank"
         rel="noopener noreferrer"
