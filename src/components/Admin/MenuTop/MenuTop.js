@@ -19,7 +19,7 @@ export default function MenuTop(props) {
         <img
           className="menu-top__left-logo"
           src={AgusLogo}
-          alt="Agustin Navarro Galdon"
+          alt="Grupo1"
         />
         <Button type="link" onClick={() => setMenuCollapsed(!menuCollapsed)}>
           <Icon type={menuCollapsed ? "menu-unfold" : "menu-fold"} />
