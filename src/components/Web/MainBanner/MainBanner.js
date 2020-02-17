@@ -11,12 +11,20 @@ export default function MainBanner() {
         <Col lg={4} />
         <Col lg={16}>
           <h2>
-            Sistema de reservacion de aulas <br /> PUCESE 2020
+            Sistema de Reservación de Aulas <br /> PUCESE 2020
           </h2>
           <h3>
              <br />
-            Graficaion y Animacion
+            Graficación y Animación
 	 </h3>
+   <h3>
+             <br />
+            Integrantes:
+            - Belkix Requejo
+            - Fernanda Revelo
+            - Fernando Guerra
+            - José Cobeña
+   </h3>
         </Col>
         <Col lg={4} />
       </Row>
