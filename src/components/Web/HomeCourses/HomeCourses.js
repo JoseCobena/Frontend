@@ -30,7 +30,7 @@ export default function HomeCourses() {
               image={reactNative}
               title="COBENA"
               subtitle="GHOST CMS"
-              link="https://pocho2001.com/"
+              link="https://josecobena.com/"
             />
           </Col>
           <Col md={6}>
