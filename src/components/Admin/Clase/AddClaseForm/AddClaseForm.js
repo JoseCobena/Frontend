@@ -14,7 +14,7 @@ import { getAccessTokenApi } from "../../../../api/auth";
 
 import "./AddClaseForm.scss";
 
-export default function EditUserForm(props) {
+export default function EditClaseForm(props) {
   const { setIsVisibleModal, setReloadUsers } = props;
   const [claseData, setClaseData] = claseState({});
 
@@ -59,7 +59,7 @@ export default function EditUserForm(props) {
   };
 
   return (
-    <div className="add-user-form">
+    <div className="add-clase-form">
       <AddForm
         userData={claseData}
         setUserData={setClaseData}
