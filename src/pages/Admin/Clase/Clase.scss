@@ -1,0 +1,8 @@
+@import "../../../scss/index.scss";
+
+.clase {
+  &__add-clase {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}
