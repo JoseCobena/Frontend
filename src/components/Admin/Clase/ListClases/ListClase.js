@@ -26,7 +26,7 @@ export default function ClaseList(props) {
     clase.forEach(clase => {
       listClaseArray.push({
         content: (
-          <Course
+          <clase
             course={clase}
             deleteClase={deleteClase}
             editClaseModal={editClaseModal}
@@ -81,7 +81,7 @@ export default function ClaseList(props) {
       okType: "danger",
       cancelText: "Cancelar",
       onOk() {
-        deleteCourseApi(accesToken, clase._id)
+        deleteClaseApi(accesToken, clase._id)
           .then(response => {
             const typeNotification =
               response.code === 200 ? "success" : "warning";
@@ -129,16 +129,16 @@ export default function ClaseList(props) {
 
 function Clase(props) {
   const { clase, deleteClase, editClaseModal } = props;
-  const [courseData, setCourseData] = useState(null);
+  const [claseData, setClaseData] = useState(null);
 
   useEffect(() => {
-    getCourseDataUdemyApi(clase.idClase).then(response => {
+    getClaseDataUdemyApi(clase.idClase).then(response => {
       if (response.code !== 200) {
         notification["warning"]({
           message: `La clase con el id ${clase.idClase} no se ha encontrado.`
         });
       }
-      setCourseData(response.data);
+      setClaseData(response.data);
     });
   }, [clase]);
 
