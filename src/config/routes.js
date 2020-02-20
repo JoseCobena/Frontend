@@ -18,6 +18,8 @@ import Blog from "../pages/Blog";
 
 // Other
 import Error404 from "../pages/Error404";
+import Clase from "../pages/Admin/Clase";
+
 
 const routes = [
   {
@@ -68,6 +70,11 @@ const routes = [
       {
         path: "/",
         component: Home,
+        exact: true
+      },
+        {
+        path: "/clase",
+        component: Clase,
         exact: true
       },
       {
