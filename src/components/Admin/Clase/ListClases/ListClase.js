@@ -5,7 +5,7 @@ import Modal from "../../../Modal";
 import AddEditCourseForm from "../AddEditClaseForm";
 import { getAccessTokenApi } from "../../../../api/auth";
 import {
-  getClaseDataUdemyApi,
+  getClaseApi,
   deleteClaseApi,
   updateClaseApi
 } from "../../../../api/clase";
@@ -132,7 +132,7 @@ function Clase(props) {
   const [claseData, setClaseData] = useState(null);
 
   useEffect(() => {
-    getClaseDataUdemyApi(clase.idClase).then(response => {
+    getClaseApi(clase.idClase).then(response => {
       if (response.code !== 200) {
         notification["warning"]({
           message: `La clase con el id ${clase.idClase} no se ha encontrado.`
