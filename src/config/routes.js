@@ -15,10 +15,10 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Courses from "../pages/Courses";
 import Blog from "../pages/Blog";
+import Clase from "../pages/Admin/Clase";
 
 // Other
 import Error404 from "../pages/Error404";
-import Clase from "../pages/Admin/Clase";
 
 
 const routes = [
