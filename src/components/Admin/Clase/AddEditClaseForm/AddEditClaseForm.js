@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Form, Icon, Input, Button, notification } from "antd";
 import { getAccessTokenApi } from "../../../../api/auth";
-import {addClaseApi, signUpAdminApi, updateClaseApi} from "../../../../api/clase";
+import {addClaseApi,  updateClaseApi} from "../../../../api/clase";
 
 import "./AddEditClaseForm.scss";
 
 export default function AddEditClaseForm(props) {
   const { setIsVisibleModal, setReloadClase, clase } = props;
   const [claseData, setClaseData] = useState({});
+
+
 
   useEffect(() => {
     clase ? setClaseData(clase) : setClaseData({});
