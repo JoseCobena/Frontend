@@ -47,11 +47,7 @@ const routes = [
         component: AdminMenuWeb,
         exact: true
       },
-      {
-        path: "/admin/courses",
-        component: AdminCourses,
-        exact: true
-      },
+
       {
         path: "/admin/blog",
         component: AdminBlog,
@@ -72,21 +68,13 @@ const routes = [
         component: Home,
         exact: true
       },
-        {
-        path: "/clase",
-        component: Clase,
-        exact: true
-      },
+
       {
         path: "/contact",
         component: Contact,
         exact: true
       },
-      {
-        path: "/courses",
-        component: Courses,
-        exact: true
-      },
+
       {
         path: "/blog",
         component: Blog,
