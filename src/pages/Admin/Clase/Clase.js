@@ -6,7 +6,7 @@ import Modal from "../../../components/Modal";
 import ClaseList from "../../../components/Admin/Clase/ListClases";
 import Pagination from "../../../components/Pagination";
 import AddEditClaseForm from "../../../components/Admin/Clase/AddEditClaseForm";
-import { getclaseApi } from "../../../api/clase";
+import { getClaseApi} from "../../../api/clase";
 
 import "./Clase.scss";
 
@@ -20,7 +20,7 @@ function Clase(props) {
   const { page = 1 } = queryString.parse(location.search);
 
   useEffect(() => {
-    getclaseApi(12, page)
+    getClaseApi(12, page)
       .then(response => {
         if (response?.code !== 200) {
           notification["warning"]({

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Form, Icon, Input, Button, notification } from "antd";
 import { getAccessTokenApi } from "../../../../api/auth";
-import { addCourseApi, updateCourseApi } from "../../../../api/course";
+import {addClaseApi, signUpAdminApi, updateClaseApi} from "../../../../api/clase";
 
 import "./AddEditClaseForm.scss";
 
@@ -13,30 +13,37 @@ export default function AddEditClaseForm(props) {
     clase ? setClaseData(clase) : setClaseData({});
   }, [clase]);
 
-  const addClase = e => {
-    e.preventDefault();
+const addClase = event => {
+    event.preventDefault();
 
-    if (!claseData.idClase) {
+    if (
+      !claseData.laboratorio ||
+      !claseData.dia ||
+      !claseData.horainicio ||
+      !claseData.horafinal ||
+      !claseData.docente ||
+      !claseData.materia ||
+        !claseData.nivel ||
+        !claseData.carrera
+    ) {
       notification["error"]({
-        message: "El id del curso es obligatorio"
+        message: "Todos los campos son obligatorios."
       });
-    } else {
-      const accessToken = getAccessTokenApi();
+    }  else {
+      const accesToken = getAccessTokenApi();
 
-      addClaseApi(accessToken, claseData)
+      addClaseApi(accesToken, claseData)
         .then(response => {
-          const typeNotification =
-            response.code === 200 ? "success" : "warning";
-          notification[typeNotification]({
-            message: response.message
+          notification["success"]({
+            message: response
           });
           setIsVisibleModal(false);
           setReloadClase(true);
           setClaseData({});
         })
-        .catch(() => {
+        .catch(err => {
           notification["error"]({
-            message: "Error del servidor, intentelo más tarde."
+            message: err
           });
         });
     }

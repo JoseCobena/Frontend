@@ -18,7 +18,7 @@ export default function EditClaseForm(props) {
   const { setIsVisibleModal, setReloadUsers } = props;
   const [claseData, setClaseData] = claseState({});
 
-  const addUser = event => {
+  const addClase = event => {
     event.preventDefault();
 
     if (
