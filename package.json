@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@tinymce/tinymce-react": "^3.3.2",
+    "aframe": "^1.0.4",
     "antd": "^3.23.2",
     "jwt-decode": "^2.2.0",
     "moment": "^2.24.0",

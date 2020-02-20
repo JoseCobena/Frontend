@@ -1,1 +1,1 @@
-export { default } from "./ClaseList";
+export { default } from "./ListClase";
