@@ -10,7 +10,7 @@ import {
   updateClaseApi
 } from "../../../../api/clase";
 
-import "./ClaseList.scss";
+import "./ClaseLists.scss";
 
 const { confirm } = ModalAntd;
 
