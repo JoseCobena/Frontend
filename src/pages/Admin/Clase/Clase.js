@@ -44,7 +44,7 @@ function Clase(props) {
     setModalContent(
       <AddEditClaseForm
         setIsVisibleModal={setIsVisibleModal}
-        setReloadClase={setReloadClase}
+        setReloadClase={setReloadclase}
         clase={null}
       />
     );
@@ -56,7 +56,7 @@ function Clase(props) {
     setModalContent(
       <AddEditClaseForm
         setIsVisibleModal={setIsVisibleModal}
-        setReloadClase={setReloadClase}
+        setReloadClase={setReloadclase}
         clase={clase}
       />
     );
@@ -75,7 +75,7 @@ function Clase(props) {
       </div>
       <ClaseList
         clase={clase}
-        setReloadClase={setReloadClase}
+        setReloadClase={setReloadclase}
         editClase={editClase}
       />
       <Pagination clase={clase} location={location} history={history} />
